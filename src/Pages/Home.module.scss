@@ -1,0 +1,10 @@
+.card {
+  margin-right: 10% !important;
+  margin-top: 56px;
+  padding-bottom: 65px !important;
+  overflow-x: hidden;
+  @media (max-width: 426px) {
+    margin-right: 5% !important;
+    
+  }
+}

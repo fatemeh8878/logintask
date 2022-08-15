@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "iransans" !important;
+}
+body {
+  background: url(./assets//image//bg.svg) right top no-repeat,
+    url(./assets//image/bg1.svg) left bottom no-repeat;
+  background-attachment: fixed;
+  @media (max-width: 430px) {
+    background-size: contain;
+  }
+}
+
+@font-face {
+  font-family: "iransans";
+  src: url("./assets/fonts/iransans/iransans.eot") format("embedded-opentype"),
+    url("./assets/fonts//iransans//iransans.woff2") format("woff2"),
+    url("./assets/fonts/iransans/iransans.woff") format("woff"),
+    url("./assets/fonts/iransans/iransans.ttf") format("truetype");
+}
+.iransans {
+  font-family: "iransans" !important;
+}
+.MuiDrawer-paper {
+  background: rgba(255, 255, 255, 0.9) !important;
+  width: 230px !important;
+}

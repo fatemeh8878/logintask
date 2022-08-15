@@ -1,0 +1,26 @@
+.list {
+  display: flex;
+  margin-bottom: 32px !important;
+  margin-right: 10px !important;
+  p {
+    color: #220760 !important;
+    font-size: 18px !important;
+    margin-right: -10px !important;
+    @media (max-width: 430px) {
+      font-size: 15px !important;
+    }
+  }
+  img {
+    @media (max-width: 430px) {
+      width: 32px !important;
+      margin-top: -20px !important;
+    }
+  }
+}
+.title {
+  span {
+    font-size: 16px !important;
+    color: #a7acbb !important;
+    margin-right: 15px !important;
+  }
+}

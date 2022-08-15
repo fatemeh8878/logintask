@@ -1,0 +1,13 @@
+.chart {
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+  canvas {
+    height: 350px !important;
+    width: 600px !important;
+    @media (max-width: 430px) {
+      width: 100% !important;
+    }
+  }
+  padding-bottom: 20px;
+}
