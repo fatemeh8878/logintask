@@ -17,8 +17,11 @@
 }
 .activemenu {
   color: #fa8735 !important;
-  background: #fcbc8e !important;
-  padding: 10px !important;
+  @media (max-width: 770px) {
+    background: #fcbc8e !important;
+    padding: 10px !important;
+  
+  }
   .dividerBox {
     margin-top: -40px;
   }
