@@ -45,6 +45,6 @@
 .root {
   @media (max-width: 770px) {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
