@@ -8,8 +8,10 @@ body {
   background: url(./assets//image//bg.svg) right top no-repeat,
     url(./assets//image/bg1.svg) left bottom no-repeat;
   background-attachment: fixed;
+  overflow-x: hidden;
   @media (max-width: 430px) {
-    background-size: contain;
+    background-size: contain !important;
+    overflow-x: hidden !important;
   }
 }
 
@@ -26,4 +28,12 @@ body {
 .MuiDrawer-paper {
   background: rgba(255, 255, 255, 0.9) !important;
   width: 230px !important;
+}
+.Mui-focused fieldset {
+  border: 2px solid #fa8735 !important; // - Set the Input border when parent has :hover
+}
+.MuiFormLabel-root {
+  font-size: 15px !important;
+  color: #000 !important;
+  margin-top: 10px;
 }

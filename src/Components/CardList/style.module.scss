@@ -1,11 +1,11 @@
 .card {
-  width: 80%;
+  width: 90%;
   height: 407px;
   border-radius: 20px !important;
   margin: auto;
   margin-top: 40px;
   box-shadow: 0px 4px 0px rgba(239, 238, 238, 0.25) !important;
-  @media (max-width: 426px) {
+  @media (max-width: 592px) {
     width: 90%;
     height: fit-content;
   }
@@ -19,32 +19,47 @@
 }
 .cardTwo {
   width: 90%;
-  height: 616px !important;
   border-radius: 20px !important;
   padding: 10px;
   padding-bottom: 20px !important;
-  @media (max-width: 768px) {
-    width: 85%;
+  height: fit-content !important;
+
+  @media (max-width: 878px) {
+    width: 93%;
   }
-  @media (max-width: 430px) {
-    width: 105%;
-    height: fit-content !important;
+  @media (max-width: 592px) {
+    width: 147%;
   }
-  @media (max-width: 378px) {
-    width: 90%;
-    height: fit-content !important;
+  @media (max-width: 542px) {
+    width: 134% !important;
+  }
+  @media (max-width: 493px) {
+    width: 120% !important;
+  }
+  @media (max-width: 425px) {
+    width: 105% !important;
+  }
+  @media (max-width: 375px) {
+    width: 93% !important;
+  }
+  @media (max-width: 320px) {
+    width: 88% !important;
   }
 }
 .cardTree {
   border-radius: 20px !important;
-  width: 82%;
-  height: 640px !important;
-  @media (max-width: 768px) {
-    width: 88%;
-    margin-top: 20px;
-  }
-  @media (max-width: 430px) {
+  width: 90%;
+  height: 755px !important;
+  @media (max-width: 878px) {
     width: 93%;
+    margin-top: 20px;
+    height: fit-content !important;
+  }
+  @media (max-width: 592px) {
+    width: 147%;
+  }
+  @media (max-width: 542px) {
+    width: 95% !important;
     height: fit-content !important;
   }
 }
@@ -66,6 +81,7 @@
 .des {
   font-size: 13px !important;
   margin-top: 20px !important ;
+  text-align: end !important;
   color: #7c7e81 !important;
   img {
     margin-right: 6px !important;
@@ -80,6 +96,25 @@
   }
   @media (max-width: 320px) {
     margin-right: -30px !important;
+  }
+}
+.des1 {
+  font-size: 13px !important;
+  margin-top: 20px !important ;
+  color: #7c7e81 !important;
+  img {
+    margin-right: 6px !important;
+    @media (max-width: 430px) {
+      margin-right: 2px !important;
+      // margin-top: -20px !important;
+    }
+  }
+  @media (max-width: 430px) {
+    font-size: 10px !important;
+    margin-right: -30px !important;
+  }
+  @media (max-width: 320px) {
+    margin-right: -40px !important;
   }
 }
 .time {

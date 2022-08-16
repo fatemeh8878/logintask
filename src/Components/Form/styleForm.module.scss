@@ -1,0 +1,123 @@
+.card {
+  width: 30% !important;
+  height: 400px !important;
+  border-radius: 20px !important;
+  margin: auto !important;
+  margin-top: 10% !important;
+  text-align: center;
+  @media (max-width: 426px) {
+    width: 90% !important;
+  }
+}
+.title {
+  font-size: 30px !important;
+  margin-top: 30px !important;
+}
+
+.form {
+  text-align: start;
+  margin-top: 7%;
+  margin-right: 9%;
+}
+.inputUser {
+  width: 120% !important;
+  margin-top: 10px !important;
+  fieldset {
+    // border: 2px solid #7c7e81 !important; // - Set the Input border when parent has :hover
+    border-radius: 10px !important;
+  }
+  &:hover fieldset {
+    border: 2px solid #fcbc8e !important; // - Set the Input border when parent has :hover
+  }
+}
+.inputPassword {
+  margin-top: 10px !important;
+  fieldset {
+    border-radius: 10px !important;
+  }
+  &:hover fieldset {
+    border: 2px solid #fcbc8e !important; // - Set the Input border when parent has :hover
+  }
+}
+.iconBack {
+  text-align: end !important;
+  margin-left: 20px;
+  margin-top: 20px;
+  button {
+    font-size: 25px !important;
+    &:hover {
+      background: none !important;
+    }
+  }
+}
+.submitButton {
+  color: #fff !important;
+  background: #fcbc8e !important;
+  margin-top: 35px !important;
+  width: 150px !important;
+  font-size: 15px !important;
+  border-radius: 20px !important;
+}
+.cardFolder {
+  padding: 50px !important;
+  border-radius: 20px !important;
+  width: 85% !important;
+  margin: auto;
+  margin-top: 10% !important;
+  @media (max-width: 768px) {
+    width: 70% !important;
+  }
+  @media (max-width: 425px) {
+    width: 70% !important;
+  }
+  @media (max-width: 375px) {
+    width: 60% !important;
+  }
+}
+.selectForm {
+  width: 80% !important;
+  @media (max-width: 768px) {
+    width: 100% !important;
+  }
+}
+.formText {
+  @media (max-width: 768px) {
+    width: 100% !important;
+  }
+}
+.LineInput {
+  span {
+    margin-left: 10px !important;
+    border-right: 2px solid;
+    height: 30px !important;
+  }
+}
+.formtime {
+  @media (max-width: 768px) {
+    width: 400px !important;
+  }
+  @media (max-width: 425px) {
+    width: 110% !important;
+  }
+  @media (max-width: 375px) {
+    width: 100% !important;
+  }
+}
+.dec {
+  width: 600px !important;
+  @media (max-width: 768px) {
+    width: 400px !important;
+  }
+  @media (max-width: 425px) {
+    width: 130% !important;
+  }
+  @media (max-width: 375px) {
+    width: 100% !important;
+  }
+  input {
+    height: 50px !important;
+    @media (max-width: 768px) {
+      height: 50px !important;
+    }
+  }
+}

@@ -13,6 +13,11 @@ import styles from "./style.module.scss";
 import { NavLink as NavLinkBase } from "react-router-dom";
 
 const HeaderList = () => {
+  const handleLogout = () => {
+    localStorage.removeItem("access_token"),
+      localStorage.removeItem("refresh-token");
+    window.location.reload(false);
+  };
   const myNavLink = React.forwardRef((props, ref) => (
     <NavLinkBase
       to={props.to}
@@ -36,10 +41,20 @@ const HeaderList = () => {
           <ListItemIcon className={styles.icon}>
             <img src={user} />
           </ListItemIcon>
-          <ListItemText primary={"ثبت نام / ورود"} className={styles.title} />
+          <ListItemText
+            primary={
+              localStorage.getItem("access_token")
+                ? "اکرم مکرم"
+                : "ثبت نام / ورود"
+            }
+            className={styles.title}
+          />
         </ListItemButton>
         <Hidden mdDown>
-          <ListItemButton className={styles.button}>
+          <ListItemButton
+            onClick={() => handleLogout()}
+            className={styles.button}
+          >
             <ListItemIcon className={styles.icon}>
               <img src={logout} />
             </ListItemIcon>

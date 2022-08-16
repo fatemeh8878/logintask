@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import FormFolder from "../Components/Form/FormFolder";
 
 const FolderAdd = () => {
   return (
-    <div>FolderAdd</div>
-  )
-}
+    <div>
+      <FormFolder />
+    </div>
+  );
+};
 
-export default FolderAdd
+export default FolderAdd;

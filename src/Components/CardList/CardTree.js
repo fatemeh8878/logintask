@@ -15,7 +15,7 @@ const CardTree = () => {
             </Typography>
           </Grid>
           <Grid item xs={4}>
-            <div className={styles.des}>
+            <div className={styles.des1}>
               مشاهده به صورت : ماهیانه
               <img src={Down} />
             </div>

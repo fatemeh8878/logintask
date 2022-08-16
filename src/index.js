@@ -12,6 +12,7 @@ import { prefixer } from "stylis";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 import { BrowserRouter } from "react-router-dom";
+import { CookiesProvider } from "react-cookie";
 
 const theme = createTheme({
   direction: "rtl",
@@ -26,15 +27,17 @@ const cacheRtl = createCache({
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <StyledEngineProvider injectFirst>
-        <CacheProvider value={cacheRtl}>
-          <ThemeProvider theme={theme}>
-            <App />
-          </ThemeProvider>
-        </CacheProvider>
-      </StyledEngineProvider>
-    </BrowserRouter>
+    <CookiesProvider>
+      <BrowserRouter>
+        <StyledEngineProvider injectFirst>
+          <CacheProvider value={cacheRtl}>
+            <ThemeProvider theme={theme}>
+              <App />
+            </ThemeProvider>
+          </CacheProvider>
+        </StyledEngineProvider>
+      </BrowserRouter>
+    </CookiesProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
