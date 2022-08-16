@@ -5,7 +5,15 @@ import { List, Drawer, Box, Toolbar, IconButton } from "@mui/material";
 import { BiX } from "react-icons/bi";
 import { ListItem } from "./ListItem";
 import ListMenu from "../ListMenu/ListMenu";
-import styles from "./style.module.scss"
+import styles from "./style.module.scss";
+import {
+  Hidden,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
+import logout from "../../assets/image/exit.svg";
+
 const Mobile = ({
   toggleDrawer,
   open,
@@ -13,6 +21,11 @@ const Mobile = ({
   handleDrawerClose,
   handleClickOpen,
 }) => {
+  const handleLogout = () => {
+    localStorage.removeItem("access_token"),
+      localStorage.removeItem("refresh-token");
+    window.location.reload(false);
+  };
   return (
     <Box component="nav" aria-label="mailbox folders">
       {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
@@ -41,6 +54,15 @@ const Mobile = ({
                   to={item.to}
                 />
               ))}
+              <ListItemButton
+                onClick={() => handleLogout()}
+                className={styles.button}
+              >
+                <ListItemIcon className={styles.icon}>
+                  <img src={logout} />
+                </ListItemIcon>
+                <ListItemText primary={"خروج"} className={styles.title} />
+              </ListItemButton>
               {/* <List>
                 {Data.documents.map((doc) => (
                   <ListMenu
